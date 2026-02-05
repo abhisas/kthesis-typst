@@ -47,8 +47,8 @@
 
 #let back-cover(
   trita-series: "EECS-EX",
-  trita-number: "2024:0000",
-  year: 2025,
+  trita-number: "2025:0000",
+  year: 2026,
 ) = page(
   margin: (top: 65mm, bottom: 30mm, left: 74pt, right: 35mm),
   {
