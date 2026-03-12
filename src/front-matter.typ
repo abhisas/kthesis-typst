@@ -17,7 +17,7 @@
 ) = page(
   margin: (top: 65mm, bottom: 30mm, left: 74pt, right: 35mm),
   {
-    set text(font: "Arial")
+    set text(font: ("Arial", "Liberation Sans"))
 
     text(size: 25pt, strong(title))
 
@@ -80,7 +80,7 @@
 ) = page(
   margin: (top: 250mm, bottom: 30mm, left: 74pt, right: 35mm),
   {
-    set text(font: "Arial")
+    set text(font: ("Arial", "Liberation Sans"))
 
     v(1fr)
 
@@ -95,7 +95,7 @@
   keywords: ("Magic", "Wonder"),
   body,
 ) = {
-  set text(font: "Arial")
+  set text(font: ("Arial", "Liberation Sans"))
 
   if abstract-heading == none {
     abstract-heading = t("abstract-heading")
@@ -125,7 +125,7 @@
   authors: ("Gary Lose", "Harriet Lung"),
   body,
 ) = {
-  set text(font: "Arial")
+  set text(font: ("Arial", "Liberation Sans"))
 
   heading(outlined: false, depth: 1, t("ack-heading"))
 
@@ -141,7 +141,7 @@
 }
 
 #let indices = {
-  set text(font: "Arial")
+  set text(font: ("Arial", "Liberation Sans"))
 
   pagebreak(weak: true, to: "odd")
   {
