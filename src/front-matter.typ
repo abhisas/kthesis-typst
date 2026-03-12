@@ -17,6 +17,8 @@
 ) = page(
   margin: (top: 65mm, bottom: 30mm, left: 74pt, right: 35mm),
   {
+    set text(font: "Arial")
+
     text(size: 25pt, strong(title))
 
     if subtitle != none {
@@ -78,6 +80,8 @@
 ) = page(
   margin: (top: 250mm, bottom: 30mm, left: 74pt, right: 35mm),
   {
+    set text(font: "Arial")
+
     v(1fr)
 
     [#sym.copyright #year #sym.space.quad #join-names(authors)]
@@ -91,6 +95,8 @@
   keywords: ("Magic", "Wonder"),
   body,
 ) = {
+  set text(font: "Arial")
+
   if abstract-heading == none {
     abstract-heading = t("abstract-heading")
   }
@@ -119,6 +125,8 @@
   authors: ("Gary Lose", "Harriet Lung"),
   body,
 ) = {
+  set text(font: "Arial")
+
   heading(outlined: false, depth: 1, t("ack-heading"))
 
   body
@@ -133,6 +141,8 @@
 }
 
 #let indices = {
+  set text(font: "Arial")
+
   pagebreak(weak: true, to: "odd")
   {
     show outline.entry.where(level: 1): it => {
@@ -163,6 +173,8 @@
 }
 
 #let extra-preamble(title: "Additional Preamble", body) = {
+  set text(font: "Arial")
+
   pagebreak(weak: true, to: "odd")
   heading(outlined: false, depth: 1, title)
 
